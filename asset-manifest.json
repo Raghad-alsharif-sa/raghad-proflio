@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/raghad-proflio/static/css/main.6cea369b.css",
+    "main.js": "/raghad-proflio/static/js/main.56c69beb.js",
+    "index.html": "/raghad-proflio/index.html",
+    "main.6cea369b.css.map": "/raghad-proflio/static/css/main.6cea369b.css.map",
+    "main.56c69beb.js.map": "/raghad-proflio/static/js/main.56c69beb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cea369b.css",
+    "static/js/main.56c69beb.js"
+  ]
+}

@@ -1,0 +1,70 @@
+/*////////////// 5-section-footer///////////////////*/
+
+footer {
+
+    background-color: rgba(214, 177, 255, 0.1);
+    padding: 40px;
+    margin-top: 42px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    border-bottom: 1px solid #c7ccfc;
+    padding-bottom: 20px;
+
+}
+
+.title2 a {
+    color: var(--color-white);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.title2 a:hover {
+    transition: 0.3s;
+    color: var(--color-purple);
+}
+
+.title2:hover {
+    transition: 0.3s;
+    scale: 1.1;
+}
+
+.links2 {
+    display: flex;
+    gap: 40px;
+}
+
+.links2 a {
+    color: var(--color-white);
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.links2 a:hover {
+    color: var(--color-purple);
+
+}
+
+.footer-span {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
+    margin-top: 20px;
+}
+
+.footer-span .ico i {
+    color: var(--color-white);
+}
+
+.footer-span .ico i:hover {
+    color: var(--color-purple);
+}
+
+/*////////////// 5-section-end footer///////////////////*/

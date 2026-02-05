@@ -1,0 +1,214 @@
+/*////////////// 4-section-contact me///////////////////*/
+
+.Contact {
+    margin-top: 42px;
+    padding: 70px 0;
+}
+
+.Contact .contanier {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+.Contact h1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 33px;
+    text-align: center;
+    height: 100px;
+    color: var(--color-white);
+    margin-bottom: 60px;
+}
+
+.Contact h1 span {
+    color: var(--color-purple);
+}
+
+.Contact .info {
+    flex: 0 0 35%;
+    max-width: 35%;
+    background-color: rgba(214, 177, 255, 0.1);
+    border-radius: 15px;
+    padding: 50px;
+    padding-bottom: 80px;
+}
+
+.Contact .info h2 {
+    color: var(--color-white);
+    margin-bottom: 25px;
+}
+
+.Contact .info .link-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact .info .link-info a {
+
+    color: var(--color-white);
+    font-size: 22px;
+    margin-bottom: 25px;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Contact .info .link-info a i {
+    background-color: var(--color-purple);
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--color-purple);
+}
+
+.lite-mode .Contact .info .link-info a i {
+    color: white;
+}
+
+.text-contact {
+    display: flex;
+    align-items: start;
+    gap: 6px;
+    flex-direction: column;
+}
+
+.text-contact .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-contact .value {
+    font-size: 15px;
+    color: var(--color-p);
+}
+
+.Contact .info h3 {
+
+    color: var(--color-white);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.Contact .info .links {
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+
+}
+
+.Contact .info .links i {
+    background-color: var(--back-color);
+    box-shadow: 0 0 8px var(--color-purple);
+    border: 1px solid var(--color-purple);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Contact .info .links a {
+    color: var(--color-white);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.Contact .info .links a:hover {
+    color: var(--color-purple);
+    scale: 1.1;
+}
+
+.Contact .form {
+
+    background-color: rgba(214, 177, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin: 0;
+}
+
+.Contact form .inputs_form {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Contact form .inputs_form input {
+    border-radius: 8px;
+    border: 1px solid var(--color-purple);
+    background-color: var(--back-color);
+    padding: 15px;
+    margin-bottom: 20px;
+    flex: 0 0 48%;
+    max-width: 48%;
+    color: var(--color-white);
+
+}
+
+.Contact form .inputs_form textarea {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-height: 150px;
+    border-radius: 8px;
+    border: 1px solid var(--color-purple);
+    background-color: var(--back-color);
+    padding: 15px;
+    margin-bottom: 40px;
+    color: var(--color-white);
+
+}
+
+.btnn {
+
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 2px solid var(--color-purple);
+    box-shadow: 0 2px 8px var(--color-purple);
+    transition: 0.3s;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.lite-mode .btnn {
+    color: white;
+
+}
+
+.btnn:hover {
+    background-color: var(--hover);
+    color: var(--back-color);
+    border: var(--back-color);
+    box-shadow: 0 2px 10px var(--color-purple);
+    scale: 1.1;
+    cursor: pointer;
+
+}
+
+.lite-mode .btnn:hover {
+    color: #5300b3;
+    box-shadow: 0 2px 10px #5300b3;
+}
+
+/*////////////// end 4-section-contact me///////////////////*/

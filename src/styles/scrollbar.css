@@ -1,0 +1,19 @@
+/*////////////// Style scrollbar///////////////////*/
+
+::-webkit-scrollbar {
+    width: 14px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: var(--back-color);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-purple);
+    border-radius: 4px;
+
+}
+
+/*////////////// End Style scrollbar///////////////////*/

@@ -1,0 +1,31 @@
+/* ===== Reset ===== */
+@import './styles/reset.css';
+
+
+/* ===== Variables (Dark / Light mode) ===== */
+@import './styles/variables.css';
+
+/* ===== Base styles ===== */
+@import './styles/base.css';
+
+/* ===== Animations ===== */
+@import './styles/animations.css';
+
+/* ===== Header ===== */
+@import './styles/header.css';
+
+/* ===== Sections ===== */
+@import './styles/home.css';
+@import './styles/about.css';
+@import './styles/skills.css';
+@import './styles/projects.css';
+@import './styles/contact.css';
+
+/* ===== Footer ===== */
+@import './styles/footer.css';
+
+/* ===== Scrollbar ===== */
+@import './styles/scrollbar.css';
+
+/* ===== Responsive ===== */
+@import './styles/responsive.css';

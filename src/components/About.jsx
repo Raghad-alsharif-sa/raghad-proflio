@@ -1,17 +1,21 @@
 import { useLanguage } from "../context/LanguageContext";
+import AboutImg from "../assets/About.jpg"; 
 
 export default function About() {
   const { t } = useLanguage();
 
   return (
     <section className="About animate" id="About">
-      <h1>{t.aboutTitle}</h1>
-      <div className="container">
-        <div className="div_Text">
-          <h3>{t.aboutTitle}</h3>
-          <p>{t.aboutText}</p>
-        </div>
-        <img className="img-About" src="img\profile.jpg" alt="Raghad" />
+    
+      <div className="box">
+        <h1>{t.aboutTitle}</h1>
+        <p>{t.aboutText}</p>
+      </div>
+
+     
+      <div className="about-image-wrapper">
+        <div className="about-image-bg"></div>
+        <img src={AboutImg} alt="About" className="about-image" />
       </div>
     </section>
   );

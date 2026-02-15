@@ -6,7 +6,11 @@ export const translations = {
     projects: "Projects",
     contact: "Contact",
 
-    title: "Raghad Alsharif",
+    heroHello: "Hello, I'm",
+    heroName: "Raghad Alsharif",
+    heroRole: "Frontend Developer",
+    heroWelcome: "Welcome to my portfolio website.",
+
     description: "Computer Science Student | Frontend Developer",
 
     viewWork: "View My Work",
@@ -36,7 +40,6 @@ export const translations = {
     contactEmail: "Email",
     contactMessage: "Message",
     contactSend: "Send Message",
-    contactDownloadCV: "Download CV",
 
     languageBtn: "AR",
   },
@@ -48,7 +51,11 @@ export const translations = {
     projects: "المشاريع",
     contact: "تواصل معي",
 
-    title: "رغد الشريف",
+    heroHello: "مرحبًا، أنا",
+    heroName: "رغد الشريف",
+    heroRole: "مطورة واجهات أمامية",
+    heroWelcome: "مرحبًا بك في موقعي الشخصي.",
+
     description: "طالبة علوم الحاسب | مطورة واجهات أمامية",
 
     viewWork: "أعمالي",
@@ -78,7 +85,6 @@ export const translations = {
     contactEmail: "البريد الإلكتروني",
     contactMessage: "رسالتك",
     contactSend: "إرسال",
-    contactDownloadCV: "تحميل السيرة الذاتية",
 
     languageBtn: "EN",
   },

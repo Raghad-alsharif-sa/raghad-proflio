@@ -1,36 +1,72 @@
-import React, { useEffect } from "react";
-import { LanguageProvider } from "./context/LanguageContext";
-
-import Header from "./components/Header";
+import { useEffect, useState } from "react";
+import { LanguageProvider, useLanguage } from "./context/LanguageContext";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
 import "./App.css";
 
-function App() {
-  // Scroll animations
+function Header() {
+  const { t, toggleLanguage } = useLanguage();
+  const [theme, setTheme] = useState("dark");
+
   useEffect(() => {
-    const animateElements = document.querySelectorAll(".animate");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    animateElements.forEach((el) => observer.observe(el));
+    document.body.className = theme === "dark" ? "" : "light-mode";
+  }, [theme]);
+
+  return (
+    <header>
+      <div className="container">
+        <div className="title">
+          <a href="#Home">{t.heroName}</a>
+        </div>
+
+        <nav>
+          <div className="links">
+            <a href="#Home">{t.home}</a>
+            <a href="#About">{t.about}</a>
+            <a href="#Skills">{t.skills}</a>
+            <a href="#Projects">{t.projects}</a>
+            <a href="#Contact">{t.contact}</a>
+          </div>
+        </nav>
+
+        <div className="icons">
+          <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            {theme === "dark" ? "🌙" : "☀️"}
+          </button>
+
+          <button onClick={toggleLanguage}>
+            {t.languageBtn}
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+function MainApp() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".animate");
+      elements.forEach((el) => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          el.classList.add("show");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <LanguageProvider>
-      {/* Header وفوتر واحد لكل لغة */}
+    <>
       <Header />
       <Home />
       <About />
@@ -38,8 +74,14 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </LanguageProvider>
+    </>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <LanguageProvider>
+      <MainApp />
+    </LanguageProvider>
+  );
+}

@@ -1,28 +1,26 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import { translations } from "../data/translations";
+import { createContext, useContext, useState } from "react";
+import { translations } from "../translations";
 
 const LanguageContext = createContext();
 
-export function LanguageProvider({ children }) {
+export const LanguageProvider = ({ children }) => {
   const [lang, setLang] = useState("en");
 
   const toggleLanguage = () => {
-    const newLang = lang === "en" ? "ar" : "en";
-    setLang(newLang);
-    document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
+    setLang((prev) => (prev === "en" ? "ar" : "en"));
   };
 
-  useEffect(() => {
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-  }, [lang]);
+  const value = {
+    lang,
+    toggleLanguage,
+    t: translations[lang],
+  };
 
   return (
-    <LanguageContext.Provider
-      value={{ lang, toggleLanguage, t: translations[lang] }}
-    >
+    <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   );
-}
+};
 
 export const useLanguage = () => useContext(LanguageContext);
